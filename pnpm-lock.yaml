@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      flagsmith:
+        specifier: ^4.0.3
+        version: 4.0.3
       next:
         specifier: 14.2.5
         version: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -742,6 +745,9 @@ packages:
   find-up@5.0.0:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
+
+  flagsmith@4.0.3:
+    resolution: {integrity: sha512-F2lI84yCwxP9RZMcqDgpj9cjWfgQ6YQLS1/bXNp4iltZz6K8lr4zECjBbqqZSUBpxpKBOxfPFX6XGdDurAKOuA==}
 
   flat-cache@3.2.0:
     resolution: {integrity: sha512-CYcENa+FtcUKLmhhqyctpclsq7QF38pKjZHsGNiSQF5r4FtoKDWabFDl3hzaEQMvT1LHEysw5twgLvpYYb4vbw==}
@@ -2662,6 +2668,8 @@ snapshots:
     dependencies:
       locate-path: 6.0.0
       path-exists: 4.0.0
+
+  flagsmith@4.0.3: {}
 
   flat-cache@3.2.0:
     dependencies:
