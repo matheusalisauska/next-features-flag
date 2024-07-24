@@ -17,12 +17,14 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const flagsmith = createFlagsmithInstance();
+
   const environmentID = process.env.FLAGSMITH_ENVIRONMENT_ID || "";
+
   await flagsmith.init({
     environmentID,
   });
+
   const serverState = flagsmith.getState();
-  flagsmith.setTrait('posts', 'true')
   return (
     <html lang="en">
       <Providers serverState={serverState}>
